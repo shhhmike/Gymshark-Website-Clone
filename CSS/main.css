@@ -38,17 +38,34 @@ a:link{
 a:visited{
     color: var(--black_font);
     text-decoration: none;
-}
+}                                                          
 
 li{
     list-style: none;
 }
 
 img{
+    object-fit: cover;
     display: block;
     max-width: 100%;
     border: none;
 }
+
+main section{
+    margin-bottom: 35px;
+}
+
+.container{
+    position: relative;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
 
 .btn_primary{
     display: inline-block;
@@ -57,11 +74,27 @@ img{
     border-radius: 2em;
     box-sizing: border-box;
     text-decoration: none;
-    background-color: #FFFFFF;
     text-align: center;
+    background-color: #0f0e0e;
 }
 
-.btn-container .btn_primary h4{
+.btn_primary:hover{
+    background-color: #353232;
+}
+
+
+.btn_secondary{
+    display: inline-block;
+    padding: 2px 27px;
+    margin: 0 0.2em 0.2em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--completely_white);
+}
+
+.btn_primary h4{
     font-size: 15px;
     text-transform: uppercase;
     font-family: var(--font_style2);
@@ -69,6 +102,17 @@ img{
     margin-bottom: 12px;
     padding: 2px;
     color: var(--white_font);
+    font-weight: 600;
+}
+
+.btn_secondary h4{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: var(--font_style2);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 2px;
+    color: var(--black_font);
     font-weight: 600;
 }
 
@@ -84,22 +128,6 @@ img{
     min-width: 100%;
     width: 100%;
     min-height: 450px;
-}
-
-.btn_primary{
-    background-color: #0f0e0e;
-}
-
-
-.container{
-    position: relative;
-}
-
-.btn-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
 }
 
 .display_content{
@@ -370,16 +398,16 @@ img{
     font-weight: 600;
 }
 
-#vital_rise{
+/* #vital_rise{
     margin-bottom: 35px;
-}
+} */
 
 /* Main Content "Family" */
 
 #family-content{
     position: absolute;
-    left: 0;
-    top: 15rem;
+    left: 4.4rem;
+    top: 18.3rem;
 }
 
 #family-content h3{
@@ -397,16 +425,165 @@ img{
     margin-bottom: 20px;
 }
 
-#family-content .btn-container .btn_primary h4{
+#family-content .btn-container .btn_secondary h4{
     font-size: 15px;
     text-transform: uppercase;
     font-family: var(--font_style2);
     margin-top: 12px;
     margin-bottom: 12px;
     padding: 2px;
-    color: var(--white_font);
-    font-weight: 600;
+    color: var(--black_font);
+    font-weight: 700;
 }
+
+#family{
+    margin-bottom: 30px;
+}
+
+/* Shop Women-Men */
+
+#shop_container{
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: flex-start;
+    padding: 0 4rem 0 4rem;
+}
+
+/* Women */
+#shop-women{
+    margin-right: 15px;
+    height: 31.5rem;
+}
+
+#shop-women img{
+    /* margin-top: 12rem; */
+    margin-top: 155px;
+    min-height: 100%;
+    min-width: 100%;
+    object-position: top;
+}
+
+#women-content{ 
+    top: 13.3rem;
+    left: 35.3rem;
+    text-align: right;
+}
+
+#women-content h3{
+    font-size: 2.1rem;
+    text-transform: uppercase;
+}
+
+#women-content .btn-container a{
+    margin-top: 13px;
+    margin-left: 77px;
+}
+
+/* Men */
+
+#shop-men{
+    position: relative;
+    height: 31.5rem;
+}
+
+#shop-men img{
+    /* margin-top: 12rem; */
+    margin-top: 155px;
+    min-height: 100%;
+    min-width: 100%;
+    object-position: top;
+}
+
+#men-content{ 
+    top: 13.3rem;
+    left: 3.7rem;
+    text-align: center;
+}
+
+#men-content h3{
+    font-size: 2.1rem;
+    text-transform: uppercase;
+}
+
+#men-content .btn-container a{
+    margin-top: 12.8px;
+}
+
+
+/* options */
+
+#options{
+    background-color: var(--font_lt_grey);
+    display: flex;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+#options div{
+    height: 20rem;
+    width: 39rem;
+    /* border: 1px solid red; */
+}
+
+#klarna{
+    background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Discount_image_3_720x.jpg) center center no-repeat;
+    margin-left: 13px;
+    margin-right: 17px;
+}
+
+#klarna::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index:10;
+}
+  
+
+#student{
+    background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Student_Discount_f2a013d7-be33-460f-8bcc-d5de2b94889d_720x.jpg?v=1621847703) center center no-repeat;
+    margin-right: 17px;
+}
+
+#student::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index:10;
+}
+
+#afterpay{
+    background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Discount_image_1_720x.jpg?v=1620818574);
+    margin-right: 17px;
+}
+
+#afterpay::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index:10;
+}
+
 
 
 /* position: absolute;
