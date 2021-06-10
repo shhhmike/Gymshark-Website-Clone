@@ -55,6 +55,7 @@ main section{
     margin-bottom: 35px;
 }
 
+
 .container{
     position: relative;
 }
@@ -116,12 +117,17 @@ main section{
     font-weight: 600;
 }
 
+.inline-bold{
+    font-weight: 600;
+}
+
 .fill {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden
 }
+
 .fill img {
     object-fit: cover;
     flex-shrink: 0;
@@ -513,10 +519,10 @@ main section{
 /* options */
 
 #options{
-    background-color: var(--font_lt_grey);
+    background-color: #eeeded;
     display: flex;
     align-items: center;
-    padding: 2rem 5rem;
+    padding: 2rem 3rem;
 }
 
 #options div{
@@ -525,6 +531,7 @@ main section{
     /* border: 1px solid red; */
 }
 
+/* Klarna */
 #klarna{
     background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Discount_image_3_720x.jpg) center center no-repeat;
     margin-left: 13px;
@@ -543,13 +550,36 @@ main section{
     height:100%;
     background:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     z-index:10;
+}    
+
+#klarna .display_content{
+    margin-top: 2rem;
+    z-index: 100;
 }
-  
+
+#klarna .display_content h3{
+    color: #f8f5f5;
+    text-transform: uppercase;
+    font-size: 22px;
+    position: absolute;
+    top: 6.2rem;
+    left: 41.5%;
+}
+
+#klarna .display_content .btn-container{
+    margin-top: 20px;
+}
+
+#klarna .display_content .btn-container a h4{
+    font-weight: 700;
+}
+
+/* Student */
 
 #student{
     background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Student_Discount_f2a013d7-be33-460f-8bcc-d5de2b94889d_720x.jpg?v=1621847703) center center no-repeat;
     margin-right: 17px;
-}
+}    
 
 #student::after{
     content:"";
@@ -565,10 +595,34 @@ main section{
     z-index:10;
 }
 
+#student .display_content{
+    margin-top: 2rem;
+    z-index: 100;
+}
+
+#student .display_content h3{
+    color: #f8f5f5;
+    text-transform: uppercase;
+    font-size: 22px;
+    position: absolute;
+    top: 6.2rem;
+    left: 31.5%;
+}
+
+#student .display_content .btn-container{
+    margin-top: 20px;
+}
+
+#student .display_content .btn-container a h4{
+    font-weight: 700;
+}
+
+/* Afterpay */
+
 #afterpay{
     background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Discount_image_1_720x.jpg?v=1620818574);
     margin-right: 17px;
-}
+}    
 
 #afterpay::after{
     content:"";
@@ -582,13 +636,81 @@ main section{
     height:100%;
     background:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     z-index:10;
+}    
+
+#afterpay .display_content{
+    margin-top: 2rem;
+    z-index: 100;
+}
+
+#afterpay .display_content h3{
+    color: #f8f5f5;
+    text-transform: uppercase;
+    font-size: 22px;
+    position: absolute;
+    top: 6.2rem;
+    left: 39.5%;
+}
+
+#afterpay .display_content .btn-container{
+    margin-top: 20px;
+}
+
+#afterpay .display_content .btn-container a h4{
+    font-weight: 700;
 }
 
 
+/* statement */
 
-/* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%; */
+#statement {
+    padding: 0 3.5rem 2.5rem 3.5rem;
+}
+
+#statement .display{
+    border: 0.5px solid rgb(189, 188, 188);
+}
+
+#statement .display .content{
+    padding: 2.5rem;
+}
+
+#statement .display .content h4{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+#statement .display .content h5{
+    font-style: var(--main_font);
+    color: var(--main_font_color);
+    line-height: 23px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+/* newsletter */
+
+#newsletter{
+    background-color: #0f0e0e;
+    margin-bottom: 35px;
+}
+
+#newsletter #newsletter-content{
+    padding: 2.5rem 0 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletter #newsletter-content h3{
+    font-family: var(--font_style2);
+    color: var(--completely_white);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#newsletter #newsletter-content .btn-container{
+    margin-left: 25px;
+}
