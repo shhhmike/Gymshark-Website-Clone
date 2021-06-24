@@ -160,6 +160,26 @@ main section{
     font-family: var(--font_style2);
 }
 
+.box{
+    position: relative;
+    height: 7.5rem;
+    width: 11.9rem;
+}
+
+.boxes-wrapper{
+    display: flex;
+}
+
+.box .border{
+    position: absolute;
+    width: inherit;
+    height: 30px;
+    background-color: #e7e7e7;
+    opacity: 1;
+    left: 0;
+    bottom: -30.5px;
+}
+
 
 
 /* a{
@@ -533,7 +553,7 @@ main section{
 
 /* Klarna */
 #klarna{
-    background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Discount_image_3_720x.jpg) center center no-repeat;
+    background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Discount_image_3_720x.jpg) center center / cover no-repeat;
     margin-left: 13px;
     margin-right: 17px;
 }
@@ -577,7 +597,7 @@ main section{
 /* Student */
 
 #student{
-    background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Student_Discount_f2a013d7-be33-460f-8bcc-d5de2b94889d_720x.jpg?v=1621847703) center center no-repeat;
+    background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Student_Discount_f2a013d7-be33-460f-8bcc-d5de2b94889d_720x.jpg?v=1621847703) center center / cover no-repeat;
     margin-right: 17px;
 }    
 
@@ -620,7 +640,7 @@ main section{
 /* Afterpay */
 
 #afterpay{
-    background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Discount_image_1_720x.jpg?v=1620818574);
+    background: url(https://cdn.shopify.com/s/files/1/0156/6146/files/Discount_image_1_720x.jpg?v=1620818574) center center / cover no-repeat;
     margin-right: 17px;
 }    
 
@@ -694,7 +714,7 @@ main section{
 
 #newsletter{
     background-color: #0f0e0e;
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
 }
 
 #newsletter #newsletter-content{
@@ -713,4 +733,87 @@ main section{
 
 #newsletter #newsletter-content .btn-container{
     margin-left: 25px;
+}
+
+/* Footer options */
+
+#footer-options{
+    padding: 1rem;
+}
+#footer-options .container{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding:  10px 2.4rem;
+}
+
+/* Left Block */
+
+#left-block{
+    display: flex;
+}
+
+
+#footer-options .container .block-1{
+    /* border: 1px solid green; */
+}
+
+#footer-options #left-block h4{
+    text-transform: uppercase;
+    font-family: var(--main_font);
+    font-size: 1rem;
+    margin-bottom: 14px;
+}
+
+#footer-options #left-block ul li a{
+    padding: 3px 0px;
+    font-family: var(--main_font);
+    font-weight: 200;
+    font-size: 0.97rem;
+    color: rgb(83, 86, 90);
+}
+
+#footer-options #left-block ul li a:hover{
+    transition: 0.3s ease 0s;
+    color: rgb(168, 166, 166);
+}
+
+#left-block ul li{
+    margin-bottom: 6px;
+}
+
+
+#help-nav-container{
+    margin-right: 4.27rem;
+}
+
+#my_acc-container{
+    margin-right: 7.3rem;
+}
+
+/* Right block */
+
+#right-block h4{
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+#bx-1{
+    background: url("//images.ctfassets.net/wl6q2in9o7k3/4QtcnsrjM61MBOfKzadnle/a18d71a24ca40bbc8137b754927e9c75/blog.jpg") center center / cover no-repeat;
+    margin-right: 10px;
+}
+
+.box .border h4{
+    margin-top: 6.5px;
+    margin-left: 1rem;
+    font-size: 0.75rem;
+}
+
+#bx-2{
+    background: url("https://images.ctfassets.net/wl6q2in9o7k3/78i6cwhCg8cVO59Dvlk7Gy/ec15b2ca715a0b1aa27be0fd09c6aa03/newsletter__1_.jpg") center center / cover no-repeat;
+    margin-right: 10px;
+}
+
+#bx-3{
+    background: url("https://images.ctfassets.net/wl6q2in9o7k3/21ifWUEOThoCNXNFlHKIlm/3c17b2662e16887877d3df1b82db9aa6/app.jpg") center center / cover no-repeat;
 }
